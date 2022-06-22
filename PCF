@@ -5,7 +5,7 @@ https://dianabirkelbach.wordpress.com/2020/12/23/all-about-pcf-versioning/
 PCF deployment - https://rajeevpentyala.com/2020/03/21/power-apps-component-framework-pcf-demystify/
 
 intialize PCF
-pac init
+pac pcf init --namespace SampleNamespace --name CalendarControl --template field
 npm install
 
 solution pac
