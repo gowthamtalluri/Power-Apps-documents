@@ -3,3 +3,10 @@ https://dianabirkelbach.wordpress.com/2020/12/23/all-about-pcf-versioning/
 
 
 PCF deployment - https://rajeevpentyala.com/2020/03/21/power-apps-component-framework-pcf-demystify/
+
+
+solution pac
+pac solution init --publisher-name accreditationcanadapublisher  --publisher-prefix ac
+
+
+pac solution add-reference --path "C:\Users\talg\source\repos\Dynamics 365 - CRM Operations\HSO.CRM.Custom\PowerAppsComponents\PortalCodeComponents\Controls\PortalWebAPIControl" 
