@@ -1,0 +1,23 @@
+Portal deployments Steps
+
+1.) Dev envionrment has current version and pervious version of code
+
+2.) Stage enviornment has previson version code and deployment code from dev. Similar applies for prod
+
+3.) Process for deployment is backup portal into pervious folder and then dowlnoad code from dev to deployment fromdev folder once download is done then ulpad website to stage enviornment from the deploymentfromdev folder.
+
+
+Github Steps to sync repositories
+
+1.) Run follwing cmd commands 
+
+One sys admin level ->  git config --system core.longpaths true
+One is at local user level -> git config --global core.longpaths true
+
+2.) Check if longpaths were true by follwing commands
+
+Admin level ->   git config --system --list --show-origin
+
+Local use level ->   git config --global --list --show-origin
+
+3.) Clone the repo make sure not spaces, replace spaces with (%20) encoding for our repo make sure name is [Dynamics%20365%20-%20CRM%20Operations]
