@@ -1,4 +1,4 @@
-Portal deployments Steps
+Portal deployments Steps.
 
 1.) Dev envionrment has current version and pervious version of code
 
@@ -7,7 +7,7 @@ Portal deployments Steps
 3.) Process for deployment is backup portal into pervious folder and then dowlnoad code from dev to deployment fromdev folder once download is done then ulpad website to stage enviornment from the deploymentfromdev folder.
 
 
-Github Steps to sync repositories
+Github Steps to sync repositories to eyerone laptops.
 
 1.) Run follwing cmd commands 
 
@@ -21,3 +21,12 @@ Admin level ->   git config --system --list --show-origin
 Local use level ->   git config --global --list --show-origin
 
 3.) Clone the repo make sure not spaces, replace spaces with (%20) encoding for our repo make sure name is [Dynamics%20365%20-%20CRM%20Operations]
+
+
+Once the Pcf controls were imported from reposiotires one have to follow the follwing setps to resolve depedencies.
+
+1.) Got to the control folder, stay on main level here is example of main level (C:\Users\talg\source\repos\Dynamics 365 - CRM Operations\HSO.CRM.Custom\PowerAppsComponents\PortalCodeComponents\Controls\MultiSelectCustomControl).
+
+2.) Run the command "npm install"
+
+3.) once above command ran scuessfully, we have to generate the manifest fiels for that run the command -> "npm run build".
