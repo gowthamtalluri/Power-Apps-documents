@@ -8,10 +8,13 @@ intialize PCF
 pac pcf init --namespace SampleNamespace --name CalendarControl --template field
 npm install
 
-solution pac
-pac solution init --publisher-name accreditationcanadapublisher  --publisher-prefix ac
+To pac as a solution
+Step 1 Run the follwing command in solution folder -> pac solution init --publisher-name accreditationcanadapublisher  --publisher-prefix ac
+Step 2 Run the following to add the project reference -> (Note - make sure you add your project reference) -> pac solution add-reference --path "C:\Users\talg\source\repos\Dynamics 365 - CRM Operations\HSO.CRM.Custom\PowerAppsComponents\PortalCodeComponents\Controls\PortalWebAPIControl" 
+
+To Build the solution package and deploy
+Step1 Got to solution folder and run follwing cmmanf -> msbuild /t:restore
+Step2 Once above step is sucesses run the follwing command -> msbuild
+Step3 Once above step is sucess the solution zip is found in bin folder -> import the solution file to enviornment/
 
 
-pac solution add-reference --path "C:\Users\talg\source\repos\Dynamics 365 - CRM Operations\HSO.CRM.Custom\PowerAppsComponents\PortalCodeComponents\Controls\PortalWebAPIControl" 
-
-msbuild /t:restore
