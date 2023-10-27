@@ -2,9 +2,13 @@ Portal deployments Steps.
 
 1.) Dev envionrment has current version and pervious version of code
 
-2.) Stage enviornment has previson version code and deployment code from dev. Similar applies for prod
+2.) Stage enviornment has "previson version code" and "deployment code from dev" folders in repo. Similar applies for prod.
 
-3.) Process for deployment is backup portal into pervious folder and then dowlnoad code from dev to deployment fromdev folder once download is done then ulpad website to stage enviornment from the deploymentfromdev folder.
+Deployment process for stage
+     1.) Backup stage portal into "previson version code" and then dowlnoad code from dev to "deployment code from dev" folder once download is done then upload website to stage enviornment from the "deployment code from dev" folder.
+
+Deployment process for prod
+     1.) Backup prod portal into "previson version code" and then dowlnoad code from stage to "deployment code from stage" folder once download is done then upload website to prod enviornment from the "deployment code from stage" folder.
 
 
 Github Steps to sync repositories to eyerone laptops.
