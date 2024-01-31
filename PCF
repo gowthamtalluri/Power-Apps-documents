@@ -14,7 +14,10 @@ Step 2 Run the following to add the project reference -> (Note - make sure you a
 
 To Build the solution package and deploy
 Step1 Got to solution folder and run follwing cmmanf -> msbuild /t:restore
-Step2 Once above step is sucesses run the follwing command -> msbuild
+Step2 Once above step is sucesses run the follwing command -> msbuild (try to build as production ready before releasing to stage with follwing command "msbuild /p:pcfbuildmode=production". this will reduce bundle size and optimize a lot).
 Step3 Once above step is sucess the solution zip is found in bin folder -> import the solution file to enviornment/
 
+
+***Bewarae if bundle size is greate then 5 mb import fails. For reducing bundle size look into import library for granular (https://dianabirkelbach.wordpress.com/2020/07/27/fluentui-granular-imports/) also try to use production command mentioned above. 
+Last way if file size is more than 5 mb then increate the enviornment levle file size limit***
 
